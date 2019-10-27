@@ -77,7 +77,7 @@ $("#btnRegister").click(function(e) {
 				$("#error-msg-mobile").addClass("fade");
 			}, error : function(XMLHttpRequest, textStatus, errorThrown) {
 				$("#error-msg-general").html("Something is wrong please try again later");
-				$("#error-msg-mobile").removeClass("fade");
+				$("#error-msg-general").removeClass("fade");
 			}
 		});
 	}
