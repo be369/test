@@ -14,7 +14,7 @@ easily run the app with syntax :
 
 or 
 
-build package with maven :
+build package with maven and deploy it:
 
         mvn clean package
         
