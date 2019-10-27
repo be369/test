@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="./bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container" align="center">
+		<div class="page-header"></div>
+		<div class="form-group">
+			<h1>
+				<b>Registration</b>
+			</h1>
+		</div>
+		<div class="error-msg-general-class fade" id="error-msg-general"></div>
+		<div class="form-group">
+			<div class="error-msg fade" id="error-msg-mobile">required</div>
+			<input type="number" id="mobileNumber" maxlength="12"
+				class="form-control" placeholder="Mobile number">
+		</div>
+		<div class="form-group">
+			<div class="error-msg fade" id="error-msg-first-name"></div>
+			<input type="text" id="firstName" class="form-control"
+				placeholder="First name">
+		</div>
+		<div class="form-group">
+			<div class="error-msg fade" id="error-msg-last-name"></div>
+			<input type="text" id="lastName" class="form-control"
+				placeholder="Last name">
+		</div>
+		<div id="birthday" class="form-group">
+			<div class="error-msg fade" id="error-msg-birthday"></div>
+			<label>Date of Birth</label> <select id="birthdayMonth">
+				<option value="" selected>Month</option>
+				<option value="1">Jan</option>
+				<option value="2">Feb</option>
+				<option value="3">Mar</option>
+				<option value="4">Apr</option>
+				<option value="5">May</option>
+				<option value="6">April</option>
+			</select> &nbsp;&nbsp; <select id="birthdayDay">
+				<option value="" selected>Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">7</option>
+			</select> &nbsp;&nbsp; <select id="birthdayYear">
+				<option value="" selected>Year</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+			</select>
+		</div>
+		<div id="rbGroup">
+			<input id="rbMale" type="radio" name="gender" value="Male"> <label>Male</label>
+			&nbsp;&nbsp; <input id="rbFemale" type="radio" name="gender"
+				value="Female"> <label>Female</label>
+		</div>
+		<div class="form-group">
+			<div class="error-msg fade" id="error-msg-email"></div>
+			<input type="text" id="email" class="form-control"
+				placeholder="Email">
+		</div>
+		<br>
+		<button id="btnRegister" class="btn btn-primary"
+			style="width: 90%; background: purple; color: white">Register</button>
+		<br>
+		<br>
+		<br>
+		<div id="divFooter1"
+			style="width: 94%; background: purple; color: white">
+			<label style="height: 60px; padding-top: 20px">Footer</label>
+		</div>
+		<div id="divFooter2" style="width: 90%" hidden="hidden">
+			<button id="btnLogin" class="btn btn-primary"
+				style="width: 100%; background: purple; color: white">Login</button>
+		</div>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="./bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript"
+		src="./bower_components/angular-resource/angular-resource.min.js"></script>
+	<script type="application/json"
+		src="./bower_components/lodash/dist/lodash.min.js"></script>
+	<script type="application/javascript" src="app/app.js"></script>
+</body>
+</html>
