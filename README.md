@@ -10,7 +10,7 @@ change server.port in file application.properties to configure port number
 
 easily run the app with syntax :
 
-        spring-boot:run 
+        mvn spring-boot:run 
 
 or 
 
